@@ -24,7 +24,7 @@ const getDays = (dateStart, dateFinish) => {
 }
 
 const calculateAmount = (defaultAmount, numberOfDays, increment) => {
-    return defaultAmount + numberOfDays * increment;
+    return defaultAmount + Math.floor(numberOfDays / 7) * increment;
 }
 
 function App() {
